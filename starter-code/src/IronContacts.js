@@ -4,6 +4,13 @@ import contacts from './contacts.json'
 
 
 class IronContacts extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
+
 
 
 
@@ -18,9 +25,14 @@ class IronContacts extends Component {
         </tr>
       )
     })
+
     console.log(contacts)
+
     return (
-      <div className="Contacts" >
+      // <button onClick={this.addLike} > {this.state.nbOfLikes} like{this.state.nbOfLikes !== 1 && 's'} </button>
+      <div className="IronContacts" >
+        <button>Add Random Contact</button>
+
         <table>
           <thead>
             <tr>
